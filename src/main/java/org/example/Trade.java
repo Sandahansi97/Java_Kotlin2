@@ -61,7 +61,7 @@ public class Trade {
 
                 comment = File_import.lines.get(i).substring(69).trim();
 
-                //nestedTags = "";
+                nestedTags = "";
 
                 List<String> tempTrade = new ArrayList<>();
                 tempTrade.add(tag);
@@ -74,7 +74,7 @@ public class Trade {
                 tempTrade.add(buyer);
                 tempTrade.add(seller);
                 tempTrade.add(comment);
-                //tempTrade.add(nestedTags);
+                tempTrade.add(nestedTags);
 
                 extractTrade.add(tempTrade);
             }
@@ -111,7 +111,7 @@ public class Trade {
                 buyer = File_import.lines.get(i).substring(68, 72);
 
                 seller = File_import.lines.get(i).substring(72, 76);
-                //comment = "";
+                comment = "";
 
                 nestedTags = File_import.lines.get(i).substring(76);
 
@@ -126,7 +126,7 @@ public class Trade {
                 tempExtTrade.add(String.valueOf(quantity));
                 tempExtTrade.add(buyer);
                 tempExtTrade.add(seller);
-                //tempExtTrade.add(comment);
+                tempExtTrade.add(comment);
                 tempExtTrade.add(nestedTags);
 
                 extractTrade.add(tempExtTrade);
